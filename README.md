@@ -13,6 +13,7 @@ Datasets are obtained from Kaggle. [Insurance company premium](https://www.kaggl
 
 ### Finding 
 * Oversampling models take longer to train and results are not as good as normal dataset models. 
+* Oversampling models are 30% more generalized than models that is using the normal dataset.
 * Although oversampling models are low accuracy results, the confusion matrix shows a quite satisfactory result. Of course, models need to be tuned. 
 * The normal dataset results are high but the confusion matrix shows results of the minor class classification are only 60-70% accurate. 
 * Random forest, Stacking, Xgboost and ANN models are quite promising and you can fine-tune these models to get good results.
