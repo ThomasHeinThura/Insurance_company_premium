@@ -18,20 +18,26 @@ Datasets are obtained from Kaggle.
 ### Finding 
 * I found oversampling data using SMOTE is quite good. Stacking and ANN(TensorFlow DNN) models show nearly 99% accurate results and No False Negatives on the testing dataset. 
 * Undersampling data tends to overfit, and sometimes it is underfitting due to a low dataset.
-* Confusion matrix on Stacking + SMOTE  
-![confusion matrix](output.png)
-* Confusion matrix and Learning curve on DNN + SMOTE
-![confusion matrix](output_dnn.png)
-![learning curve_accuracy](learning_curve_dnn.png)
-![learning_curve_loss](learning_curve_loss.png)
-* barplot of f1_score across the models + Nearmiss  
-![barplot of f1_score](barplot.png)
 
- With SMOTE            |  Without SMOTE
-:-------------------------:|:-------------------------:
-[All model_f1_score_plot](/result_png/all_model_f1_score_plot%2BSMOTE.png)  |  ![](result/../result_png/all_model_f1_score_plot.png)
 
-### Further Study 
+## Result Table
+Title             |  With SMOTE         |  Without SMOTE
+:-------------------------:|:-------------------------:|:-------------------------:
+All model f1 score  | ![](result_png/all_model_f1_score_SMOTE.png)| ![](result_png/all_model_f1_socre.png)
+All model f1 score plot|![](/result_png/all_model_f1_score_plot_SMOTE.png)|:![](result/../result_png/all_model_f1_score_plot.png):
+logistic | ![](result_png/logistic_matrix_SMOTE.png) | ![](result_png/logistic_matrix.png) 
+Bagging | ![](result_png/Bagging_martix_SMOTE.png) | ![](result_png/Bagging_martix.png)
+CatBoost | ![](result_png/Cat_matrix_smote.png) | ![](result_png/Cat_matrix.png)
+Extra Tree | ![](result_png/Extra_tree_matrix_SMOTE.png) | ![](result_png/Extra_tree_matrix.png)
+Random forest Tree | ![](result_png/Random_forest_matrix_SMOTE.png)| ![](result_png/Random_forest_matrix.png)
+Stacking model | ![](result_png/stacking_matrix_SMOTE.png) | ![](result_png/stacking_matrix.png)
+ANN Matrix | ![](result_png/ANN_matrix_SMOTE.png) | ![](result_png/ANN_matrix.png)
+ANN Accuracy | ![](result_png/ANN_accurary_SMTOE.png) | ![](result_png/ANN_accuray.png)
+ANN Loss | ![](result_png/ANN_loss_SMOTE.png) | ![](result_png/ANN_loss.png)
+
+
+## Further Study 
 * try to test other datasets (2, 3, 4).
 * Run tests on oversampling datasets and models.
 * Add LSTM models because there is a time frame.
+
